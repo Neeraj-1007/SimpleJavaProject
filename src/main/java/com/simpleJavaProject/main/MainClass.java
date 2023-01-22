@@ -6,9 +6,10 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class MainClass {
-    private static final Logger logger = Logger.getLogger("MainClass");
 
-    public static void init() {
+    public static void main(String[] args) {
+
+         final Logger logger = Logger.getLogger("MainClass");
         try {
             FileHandler fh;
             fh = new FileHandler("D:/GitWithJenkins/SimpleProject/logs/MyFile.log");
@@ -19,12 +20,6 @@ public class MainClass {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-    }
-
-    public static void main(String[] args) {
-        init();
         logger.info("in MAIN Method of Logger ");
     }
 }
