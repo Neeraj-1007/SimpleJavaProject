@@ -8,7 +8,6 @@ import java.util.logging.SimpleFormatter;
 public class MainClass {
     private static final Logger logger = Logger.getLogger("MainClass");
 
-
     public static void init() {
         try {
             FileHandler fh;
